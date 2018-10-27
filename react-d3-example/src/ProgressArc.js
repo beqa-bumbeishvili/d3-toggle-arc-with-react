@@ -5,6 +5,7 @@ class ProgressArc extends Component {
     componentDidMount() {
         const context = this.setContext();
         this.setBackground(context);
+        this.setForeground(context)
     }
 
     setContext() {
@@ -22,8 +23,16 @@ class ProgressArc extends Component {
             .style('fill', '#e6e6e6')
             .attr('d', this.arc());
     }
+
+    setForeground(context) {
+        return context.append('path')
+            .datum({ endAngle: this.tau * 0.3 })
+            .style('fill', '#00ff00')
+            .attr('d', this.arc());
+    }
+
     tau = Math.PI * 2;
-    
+
     arc() {
         return d3.arc()
             .innerRadius(100)
