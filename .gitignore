@@ -1,0 +1,22 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+react-d3-example/node_modules
+
+# testing
+react-d3-example/coverage
+
+# production
+react-d3-example/build
+
+# misc
+react-d3-example/.DS_Store
+react-d3-example/.env.local
+react-d3-example/.env.development.local
+react-d3-example/.env.test.local
+react-d3-example/.env.production.local
+react-d3-example/npm-debug.log*
+react-d3-example/yarn-debug.log*
+react-d3-example/yarn-error.log*
+
+.vscode
