@@ -1,1 +1,1 @@
-# d3-toggle-arc-with-react
+# building D3 toggle arc component with React
