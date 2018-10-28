@@ -26,6 +26,7 @@ class App extends Component {
           backgroundColor="#e6e6e6"
           foregroundColor="#00ff00"
           percentComplete={this.state.percentComplete}
+          duration={2000}
         /></div>);
   }
 }
